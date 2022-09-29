@@ -5,26 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formulario.css">
-    <title>Aula de Formulário</title>
+    <link rel="icon" href="logopequena.jpg">
+    <title>Document</title>
 </head>
+    <style>
+        *{font-family: Arial, Helvetica sans-serif;
+        
+        }
+    
+    
+    </style>
+
 <body>
-   
-   
-   
-   
-    <h1>Meu primeiro formulário</h1>
+    <label for="email">email</label>
+    <input type="email" id="email" class="inputpadrao"
+    required placeholder="seuemail@dominio.com">
+
+    <label for="mensagem">mensagem</label>
+    <textarea cols="70" rows="10" id="mensagem" class="inputpadrao"
+    required> </textarea>
+    
+    <p><input type="submit" value="Enviar"></p>
+    <fieldset>
+        <p>Como prefere ser atendido</p>
+
+        <label for="radio-email">
+            <input type="radio" name="contato" value="email" id="radio-email">
+            <img src="email.png" id="gmail">
+         </label>
+    
+         <label for="radio-telefone">
+            <input type="radio" name="contato" value="telefone" id="radio-telefone">
+            <img src="telefone.png" id="telefone">
+         </label>
+
+         <label for="radio-whatsapp">
+            <input type="radio" name="contato" value="telefone" id="radio-telefone">
+            <img src="whats.png" id="whats"> 
+         
+         </label>
+
+         
+         </fieldset>
+
+         <fieldset>
+                   <legend>Qual horario prefere ser atendido</legend>
+                   <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                   
+                </select>
+
+        </fieldset>
+               <label class="checkbox"><input type="checkbox" checked>Gostaria 
+            de receber nossa novidade por email</label>
+            <input type="submit" value="Enviar formulario" class="enviar">
 
 
 
-        <form>
-
-            <p>Nome<input type="text" id="nome"></p>
-            <p>Sobrenome<input type="text" id="sobrenome"></p>
-            <p>E-mail<input type="email" id="email"></p>
-            <p>Data de nascimento<input type="date" id="date"></p> 
 
 
-            <p>Enviar:<input type="submit" id="enviar"></p>
-        </form>
+    
+                   
+
+
+        
+
 </body>
 </html>
