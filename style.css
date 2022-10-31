@@ -21,4 +21,13 @@ body {
     width: 327px;
 
 
+}  
+ 
+ .produtoinfo {
+    float: 300px;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: azure;
+
 }
